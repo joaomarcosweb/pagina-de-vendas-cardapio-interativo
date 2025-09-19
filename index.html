@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Digital Delivery - A Solução Inteligente para o seu Negócio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #F8FAFC; /* bg-slate-50 */
+            color: #1E293B; /* text-slate-800 */
+        }
+
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(245, 158, 11, 0.3), 0 4px 6px -2px rgba(245, 158, 11, 0.1);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- HERO SECTION -->
+    <header class="min-h-screen flex flex-col items-center justify-center text-center p-6 bg-slate-50 fade-in-section is-visible">
+        <div class="max-w-4xl mx-auto">
+            <span class="inline-block bg-amber-100 text-amber-800 text-sm font-semibold px-4 py-1 rounded-full mb-4">A REVOLUÇÃO DO SEU DELIVERY</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 leading-tight">
+                Pare de usar Flyer. Adote um Cardápio Digital Inteligente.
+            </h1>
+            <p class="mt-6 text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
+                Receba pedidos completos no seu WhatsApp, elimine erros e profissionalize seu atendimento. Pronto em até 48 horas.
+            </p>
+            <a href="#cta" class="mt-10 inline-block px-10 py-4 text-lg font-bold text-white bg-amber-500 rounded-lg cta-button">
+                CRIAR MEU CARDÁPIO AGORA
+            </a>
+        </div>
+    </header>
+
+    <main class="overflow-x-hidden">
+
+        <!-- SEÇÃO 1: O PROBLEMA -->
+        <section class="py-20 px-6 fade-in-section">
+            <div class="max-w-5xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Seu flyer no WhatsApp está <span class="text-red-500">custando dinheiro</span>.</h2>
+                <p class="mt-4 text-lg text-slate-600">O jeito antigo de vender gera atrito, confusão e perda de clientes.</p>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                        <i data-lucide="zoom-in" class="w-10 h-10 mx-auto text-red-500"></i>
+                        <h3 class="mt-4 text-lg font-semibold text-slate-900">Cliente Confuso</h3>
+                        <p class="mt-2 text-slate-600">Zoom na imagem, preços ilegíveis, dúvidas constantes.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                        <i data-lucide="clock-10" class="w-10 h-10 mx-auto text-red-500"></i>
+                        <h3 class="mt-4 text-lg font-semibold text-slate-900">Atendimento Lento</h3>
+                        <p class="mt-2 text-slate-600">Horas respondendo perguntas que um cardápio resolveria.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                        <i data-lucide="x-circle" class="w-10 h-10 mx-auto text-red-500"></i>
+                        <h3 class="mt-4 text-lg font-semibold text-slate-900">Pedidos Errados</h3>
+                        <p class="mt-2 text-slate-600">Anotações manuais que levam a erros e prejuízo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: A SOLUÇÃO -->
+        <section class="py-20 px-6 bg-white fade-in-section">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-5xl font-bold text-slate-900">A Solução: um <span class="text-amber-500">Fluxo de Pedidos</span> Perfeito</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Simples para o cliente, poderoso para você.</p>
+                </div>
+                <div class="mt-16 grid md:grid-cols-2 gap-10 items-center">
+                    <!-- Fluxo do Cliente -->
+                    <div class="space-y-4">
+                        <h3 class="text-2xl font-bold text-slate-900 flex items-center gap-3"><i data-lucide="smartphone" class="w-8 h-8 text-amber-500"></i>Para o Cliente:</h3>
+                        <p class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-amber-500 mt-1 flex-shrink-0"></i> Acessa o link e navega em um cardápio limpo e rápido.</p>
+                        <p class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-amber-500 mt-1 flex-shrink-0"></i> Adiciona itens, endereço e pagamento em segundos.</p>
+                        <p class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-amber-500 mt-1 flex-shrink-0"></i> Envia o pedido com um clique.</p>
+                    </div>
+                    <!-- Fluxo do Lojista -->
+                    <div class="space-y-4">
+                        <h3 class="text-2xl font-bold text-slate-900 flex items-center gap-3"><i data-lucide="user-cog" class="w-8 h-8 text-amber-500"></i>Para Você, Lojista:</h3>
+                        <p class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-amber-500 mt-1 flex-shrink-0"></i> Recebe o pedido 100% correto no WhatsApp.</p>
+                        <p class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-amber-500 mt-1 flex-shrink-0"></i> Gerencia tudo (preços, produtos, banners) em um painel fácil.</p>
+                        <p class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-amber-500 mt-1 flex-shrink-0"></i> Fim das comissões. O lucro é 100% seu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SEÇÃO: VEJA POR DENTRO -->
+        <section class="py-20 px-6 bg-slate-900 fade-in-section">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-5xl font-bold text-white">Veja o Sistema em Ação</h2>
+                <p class="mt-4 text-lg text-slate-300">Sem truques. Um vídeo real mostrando como seu delivery vai operar.</p>
+                <div class="mt-10 aspect-video rounded-xl overflow-hidden shadow-2xl border-2 border-amber-500/50">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/J-9efTdjDws?si=yvMNnc7Lf3UN4ApK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 4: QUANTO CUSTA -->
+        <section class="py-20 px-6 fade-in-section">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Um Investimento Inteligente.</h2>
+                <p class="mt-4 text-lg text-slate-600">Plataformas cobram até 30% do seu faturamento. Aqui, você investe uma vez e o sistema é seu para sempre.</p>
+
+                <div class="mt-10 bg-white border-2 border-amber-500 rounded-2xl p-8 shadow-2xl transform hover:scale-105 transition-transform duration-300 text-slate-900">
+                    <span class="inline-block bg-amber-400 text-amber-900 text-sm font-bold px-4 py-1 rounded-full mb-4 uppercase">Pagamento Único. Sem Mensalidade.</span>
+                    <p class="my-4 text-6xl md:text-7xl font-extrabold text-slate-900">R$297</p>
+                    <ul class="mt-6 space-y-4 text-lg text-left text-slate-600">
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-6 h-6 text-amber-500"></i><span>Sistema seu <span class="font-bold">para sempre</span>.</span></li>
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-6 h-6 text-amber-500"></i><span>Entrega e configuração em até <span class="font-bold">48 horas</span>.</span></li>
+                        <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-6 h-6 text-amber-500"></i><span>Zero comissões ou taxas escondidas.</span></li>
+                    </ul>
+                    <a href="#cta" class="mt-8 inline-block w-full px-10 py-4 text-xl font-bold text-white bg-amber-500 rounded-lg cta-button">
+                        QUERO ECONOMIZAR E VENDER MAIS
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 5: DEPOIMENTO -->
+        <section class="py-20 px-6 bg-slate-50 fade-in-section">
+            <div class="max-w-3xl mx-auto text-center">
+                 <div class="flex justify-center text-amber-400 mb-4">
+                    <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                    <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                    <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                    <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                    <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                </div>
+                <blockquote class="text-xl md:text-2xl italic text-slate-700">
+                    “O cardápio digital mudou o jogo. Os pedidos vêm certos, o cliente não fica com dúvida e eu economizo um tempo enorme. Se pagou em menos de uma semana.”
+                </blockquote>
+                <p class="mt-6 font-bold text-lg text-slate-900">— Marcos, <span class="text-amber-500">Hamburgueria da Vila</span></p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 6: QUEM ESTÁ POR TRÁS -->
+        <section class="py-20 px-6 bg-white fade-in-section">
+            <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-10 items-center">
+                <div class="md:col-span-1 flex justify-center">
+                    <div class="relative">
+                        <img src="https://i.postimg.cc/9fg61zzp/FOTO-PERFIL.jpg" alt="João, criador do Cardápio Digital Delivery" class="w-48 h-48 rounded-full object-cover shadow-lg">
+                        <div class="absolute -bottom-2 -right-2 bg-amber-500 p-2 rounded-full text-white">
+                            <i data-lucide="code-2" class="w-6 h-6"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-2 text-center md:text-left">
+                    <h2 class="text-3xl font-bold text-slate-900">Criado por quem entende do seu negócio.</h2>
+                    <p class="mt-4 text-lg text-slate-600">Sou <span class="font-bold text-amber-500">João</span>, desenvolvedor focado em soluções para pequenos negócios. Cansado de ver lojistas reféns de taxas abusivas e ferramentas complicadas, criei este cardápio para ser simples, justo e eficiente.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SEÇÃO 7: CHAMADA FINAL (CTA) -->
+        <section id="cta" class="py-20 px-6 bg-slate-900 text-white fade-in-section">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-extrabold">Qual futuro você escolhe para o seu delivery?</h2>
+                <div class="mt-10 grid md:grid-cols-2 gap-8 text-left">
+                    <div class="bg-slate-800/50 p-6 rounded-lg border border-red-500/50">
+                        <h3 class="font-bold text-xl flex items-center gap-2"><i data-lucide="thumbs-down" class="w-6 h-6 text-red-400"></i>O Passado</h3>
+                        <p class="mt-2 text-slate-300">Continuar com flyers, erros manuais e perder clientes para a concorrência moderna.</p>
+                    </div>
+                    <div class="bg-slate-800/50 p-6 rounded-lg border border-amber-500/50">
+                        <h3 class="font-bold text-xl flex items-center gap-2"><i data-lucide="zap" class="w-6 h-6 text-amber-400"></i>O Futuro</h3>
+                        <p class="mt-2 text-slate-300">Modernizar, automatizar pedidos e ver seu lucro crescer sem pagar comissões.</p>
+                    </div>
+                </div>
+                <p class="mt-12 text-2xl font-bold">Comece o futuro hoje por apenas R$297.</p>
+                <a href="https://wa.me/SEUNUMERO?text=Olá!%20Quero%20ativar%20meu%20Cardápio%20Digital!" target="_blank" class="mt-8 inline-block px-12 py-5 text-xl font-extrabold text-white bg-amber-500 rounded-lg shadow-lg cta-button">
+                    QUERO MODERNIZAR MEU DELIVERY
+                </a>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="text-center p-6 bg-slate-900 border-t border-slate-800">
+        <p class="text-slate-400">&copy; 2024 Cardápio Digital Delivery. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        const sections = document.querySelectorAll('.fade-in-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.15 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
+
+
